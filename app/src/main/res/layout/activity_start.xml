@@ -17,7 +17,8 @@
         android:layout_marginTop="123dp"
         android:id="@+id/startService"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="startService" />
 
     <Button
         android:text="Stop service"
@@ -26,7 +27,8 @@
         android:layout_centerVertical="true"
         android:id="@+id/stopService"
         android:layout_alignStart="@+id/startService"
-        android:layout_alignEnd="@+id/startService" />
+        android:layout_alignEnd="@+id/startService"
+        android:onClick="stopService" />
 
     <Button
         android:text="Exit"
@@ -36,6 +38,7 @@
         android:id="@+id/exit"
         android:layout_below="@+id/stopService"
         android:layout_alignStart="@+id/stopService"
-        android:layout_alignEnd="@+id/stopService" />
+        android:layout_alignEnd="@+id/stopService"
+        android:onClick="exitApp" />
 
 </RelativeLayout>
