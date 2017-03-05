@@ -24,6 +24,10 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"></action>
             </intent-filter>
         </receiver>
+
+        <service
+            android:name=".AwarenessBackgroundService"
+            android:exported="false"/>
     </application>
 
 </manifest>
