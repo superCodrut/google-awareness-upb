@@ -15,25 +15,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="123dp"
-        android:id="@+id/button"
+        android:id="@+id/startService"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="startService" />
 
     <Button
         android:text="Stop service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/button"
-        android:id="@+id/button2" />
+        android:id="@+id/stopService"
+        android:layout_alignStart="@+id/startService"
+        android:layout_alignEnd="@+id/startService"
+        android:onClick="stopService" />
 
     <Button
         android:text="Exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/exit"
+        android:layout_below="@+id/stopService"
+        android:layout_alignStart="@+id/stopService"
+        android:layout_alignEnd="@+id/stopService"
+        android:onClick="exitApp" />
 
 </RelativeLayout>
