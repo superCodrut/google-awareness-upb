@@ -10,10 +10,14 @@ import android.content.pm.PackageManager;
 import android.provider.Settings;
 import android.widget.Toast;
 
+import static android.support.v4.content.WakefulBroadcastReceiver.startWakefulService;
+
 public class AlarmService extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Toast.makeText(context, "Eu sunt alarma", Toast.LENGTH_SHORT).show();
+        Intent awarnessIntent = new Intent(context, AwarenessBackgroundService.class);
+        startWakefulService(context, awarnessIntent);
     }
 
     public void setAlarm(Context context) {
